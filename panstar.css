@@ -1,0 +1,657 @@
+@charset "utf-8";
+
+body {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Play", sans-serif;
+}
+
+button {
+    background-color: #f4831f;
+    border: none;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+button:hover {
+    border-radius: 25px;
+}
+
+/*** header ***/
+
+header {
+    height: 60vw;
+}
+
+/* header-bar */
+.header-bar {
+    position: sticky;
+    z-index: 9999999999;
+    top: 0;
+    background-color: rgba(116, 116, 116, 0.3);
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    border-bottom: rgba(255, 255, 255, 0.5) solid 1px;
+}
+
+.header-bar h1 {
+    width: 200px;
+    text-indent: -99999px;
+    color: transparent;
+    background-image: url(./panstar/1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: center;
+    transform: translateY(10px)translateX(20px);
+}
+
+.header-bar .gnb-nav {
+    width: 70vw;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-bar .gnb-nav li {
+    display: block;
+}
+
+.header-bar .user {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.header-bar .user li:first-child a {
+    background-color: #f5821f;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.header-bar .user img {
+    vertical-align: middle;
+    width: 16px;
+    margin-right: 5px;
+    color: #fff;
+}
+header video {
+    autoplay
+}
+
+/* header bg-video */
+header .bg-video {
+    position: absolute;
+    top: 0;
+    z-index: -999;
+}
+
+/* header video-box */
+header .video-box .txt-box {
+    position: absolute;
+    top: 23vw;
+    left: 6vw;
+    color: #fff;
+}
+
+header .video-box .txt-box h2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 56px;
+    font-weight: 800;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+header .video-box .txt-box h2 span {
+    font-style: italic;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 50px;
+    text-indent: 10px;
+}
+
+header .video-box .txt-box p {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+    width: 300px;
+    text-indent: 5px;
+}
+
+/* header button-bar */
+header .button-bar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.5;
+    position: absolute;
+    right: 3vw;
+    top: 22vw;
+}
+
+header .button-bar li {
+    background-color: rgba(124, 123, 123, 0.5);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header.button-bar li a {
+    display: block;
+}
+
+header .button-bar img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+header .button-bar li:hover {
+    background-color: rgba(245, 130, 31, 0.5);
+}
+
+
+/**** main ****/
+
+/* At a Glance */
+
+main .box {
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+main .box h2 {
+    display: block;
+    font-size: 37px;
+    position: relative;
+}
+
+main .box h2::before {
+    display: inline-block;
+    content: ' ';
+    height: 21px;
+    width: 4px;
+    background-color: #f5821f;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: matrix(1, 0, -0.466308, 1, 0, 0);
+}
+
+main .box p {
+    width: 480px;
+    font-size: 14.5px;
+    color: #666666;
+    margin: 20px auto;
+}
+
+main .box ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+main .box ul li {
+    font-family: "Play", sans-serif;
+    border-right: 2px solid #ddd;
+    width: 25%;
+    font-size: 15px;
+    font-weight: 400;
+    color: #343434;
+}
+
+main .box ul li:last-child {
+    border: none;
+}
+
+main .box ul li img {
+    margin-bottom: 35px;
+}
+
+main .box ul li strong {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    font-weight: 700;
+}
+
+main .box ul li span {
+    color: #022974;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+main .box ul li span::before {
+    content: "";
+    width: 24px;
+    height: 1px;
+    background-color: #000;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+main .box ul li p {
+    font-size: 14.5px;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #454545;
+    width: 200px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+
+/* Business Area */
+.business {
+    text-align: center;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+
+.business h2 {
+    display: block;
+    font-size: 37px;
+    position: relative;
+}
+
+.business h2::before {
+    content: '';
+    height: 21px;
+    width: 4px;
+    background-color: #f5821f;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: matrix(1, 0, -0.466308, 1, 0, 0);
+}
+
+.business p {
+    font-size: 17px;
+    color: #666666;
+    margin: 20px auto;
+    margin-bottom: 45px;
+}
+
+.business .nav {
+    display: flex;
+    width: 700px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 37px;
+}
+
+.business .nav li {
+    font-size: 16px;
+    font-weight: 500;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.business .nav li a:hover {
+    color: #f5821f;
+    border-top: 2px solid #f4831f;
+    cursor: pointer;
+}
+
+.business .box1 .txtbox {
+    box-sizing: border-box;
+    width: 150%;
+    height: 600px;
+    background-color: #eeeeee;
+    padding: 100px 0;
+}
+
+.business .box1 .txtbox h3 {
+    font-size: 35px;
+    font-family: 500;
+    color: #333333;
+}
+
+.business .box1 .txtbox p {
+    font-size: 15px;
+}
+
+.business .box1 .txtbox .img {
+    display: flex;
+    justify-content: center;
+}
+
+.business .box1 .txtbox .img img {
+    padding: 15px;
+}
+
+.business .all {
+    display: flex;
+    height: 700px;
+    position: relative;
+}
+
+.business .box2 { 
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+.business .box2 img{
+    width: 100%;
+}
+
+.business button {
+    position: absolute;
+    top: 40%;
+    right: 45%;
+    z-index: 9999999;
+}
+
+
+
+/* Schedule */
+.schedule {
+    text-align: center;
+
+}
+
+.schedule h2 {
+    display: block;
+    font-size: 37px;
+    position: relative;
+}
+
+.schedule h2::before {
+    content: '';
+    height: 21px;
+    width: 4px;
+    background-color: #f5821f;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: matrix(1, 0, -0.466308, 1, 0, 0);
+}
+
+.schedule p {
+    font-size: 17px;
+    color: #666666;
+    margin: 20px auto;
+    margin-bottom: 25px;
+}
+
+.schedule .nav {
+    font-family: "Play", sans-serif;
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.schedule .nav li {
+    font-size: 17px;
+    font-weight: 700;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.schedule .nav li:hover a {
+    color: #f4831f;
+}
+
+.schedule h3 {
+    height: 400px;
+    background-color: yellow;
+    align-items: center;
+    margin: 40px 0;
+    line-height: 400px;
+}
+
+.schedule button {
+    margin-bottom: 20px;
+}
+
+/* Contact Us */
+.contact {
+    text-align: center;
+}
+
+.contact h2 {
+    margin-top: 60px;
+    display: block;
+    font-size: 40px;
+    position: relative;
+}
+
+.contact h2::before {
+    content: '';
+    height: 21px;
+    width: 4px;
+    background-color: #f5821f;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: matrix(1, 0, -0.466308, 1, 0, 0);
+}
+
+.contact span {
+    display: block;
+    font-size: 14px;
+    color: #666666;
+    margin: 20px 0;
+}
+.contact .contactbox {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    height: 410px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+.contact .contactbox .imgbox{
+    width: 500px;
+    height: 380px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #343434;
+}
+.contact .contactbox .imgbox img {
+    width: 700px;
+    height: 460px;
+    transform: translateX(-110px);
+}
+.contact .contactbox .imgbox h3 {
+    display: block;
+    position: absolute;
+    background-color: #f4831f;
+    color: #fff;
+    width: 140px; height: 50px;
+    line-height: 2.5;
+}
+
+.contact .contactbox .imgbox h4{
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+    transform: translateY(-250px);
+}
+.contact .contactbox .imgbox p {
+    font-family: "Play", sans-serif;
+    color: #fff;
+    transform: translateY(-240px);
+}
+.contact .contactbox .imgbox a {
+    color: #fff;
+    transform:  translateY(-230px);
+    display: block;
+    width: 140px;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    margin: 0 auto;
+}
+.contact .contactbox .imgbox img {
+    opacity: 0.3;
+    transition-duration: 0.5s;
+    transition-property: opacity;
+    
+}
+.contact .contactbox .imgbox img:hover {
+    opacity: 0.6;
+    transition-duration: 0.5s;
+}
+
+.contact .notice .menu{
+    display: flex;
+    flex-direction: column;
+}
+.contact .notice{
+    position: relative;
+    display: flex;
+}
+.contact .notice h3 {
+    font-size: 38px;
+    font-weight: 700;
+    font-family: "Play", sans-serif;
+    margin-right: 250px;
+}
+.contact .notice button {
+    width: 130px;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+    border: #dcdcdc solid 0.8px;
+}
+.contact .notice .menu {
+    position: absolute;
+    margin: 70px 0;
+    text-align: left;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+}
+.contact .notice .menu li {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.contact .notice .menu a {
+    display: block;
+    margin-right: 130px;
+}
+.contact .notice .menu time {
+    text-align: right;
+    position: absolute;
+    right: 0;
+}
+.contact .recruit {
+    position: relative;
+}
+.contact .recruit h3 {
+    font-family: "Play", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    color: #f5821f;
+    position: absolute;
+    top: 25px; left: 10px;
+}
+.contact .recruit h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(52, 52, 52);
+    position: absolute;
+    top: 60px; left: 10px;
+}
+.contact .recruit button {
+    width: 120px; height: 40px;
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+}
+
+
+/* footer */
+
+footer .slick {
+    height: 100px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .logo-area {
+    height: 305px;
+    background-color: #2a2a2a;
+
+    color: #7e7e7e;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer .logo-area a {
+    width: 400px;
+    transform: translate(40px, 40px);
+}
+
+footer .logo-area .ft-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .logo-area .ft-nav li {
+    display: block;
+    margin-right: 20px;
+}
+footer .logo-area p {
+    font-size: 14px;
+}
+
+footer .logo-area .address {
+    display: flex;
+}
+
+footer .logo-area .address p {
+    margin-right: 20px;
+}
+
+footer .logo-area p {
+    transform: translate(30px, 40px);
+}
+
+footer .logo-area span {
+    font-size: 14px;
+    width: 500px;
+    transform: translate(30px, 50px);
+}
+
+footer .logo-area .tel {
+    display: flex;
+}
+
+footer .logo-area .tel p {
+    margin-right: 15px;
+}
